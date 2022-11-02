@@ -24,7 +24,7 @@ window.addEventListener("load", function() {
 //play button
 play.addEventListener("click", function() {
 	video.play();
-	volume.innerHTML = video.volume * 100;
+	volume.innerHTML = video.volume * 100 + '%';
 	slider.value = video.volume * 100;
 });
 
@@ -67,7 +67,7 @@ skip.addEventListener("click", function() {
 
 slider.addEventListener("input", function() {
 	video.volume = slider.value / 100;
-	volume.innerHTML = slider.value;
+	volume.innerHTML = slider.value + '%';
 })
 
 vintage.addEventListener("click", function () {
